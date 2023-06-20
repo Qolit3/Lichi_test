@@ -1,28 +1,23 @@
 import Image from "next/image"
 import Link from "next/link"
-import cart from "../../public/cart.png"
+import cart from "../../../public/cart.png"
+import styles from "./header.module.css"
 
 
 export const Header = () => {
 
 
   return(
-    <header>
+    <header className={styles.header}>
       <div>
-        <div />
         <nav>
-          <ul>
-            <li>
+          <ul className={styles.nav}>
+            <li className={`${styles.left_nav_li} ${styles.logo}`} key={1}>
               <Link href="/">
                 Бренд
               </Link>
             </li>
-            <li>
-              <Link href="/">
-                Новинки
-              </Link>
-            </li>
-            <li>
+            <li className={styles.left_nav_li} key={3}>
               <Link href="/">
                 Одежда
               </Link>
@@ -30,13 +25,14 @@ export const Header = () => {
           </ul>
         </nav>
       </div>
-      <div>
-        <div>
+      <div className={styles.nav}>
+        <div className={styles.right_nav_box}>
           <Image
             src={cart}
             alt="Корзина"
+            width={35}
           />
-          <span>Корзина</span>
+          <span className={styles.right_nav_box_text}>Корзина</span>
         </div>
       </div>
     </header>

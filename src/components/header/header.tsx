@@ -22,6 +22,11 @@ export const Header = () => {
                 Одежда
               </Link>
             </li>
+            <li className={styles.left_nav_li} key={3}>
+              <Link href="/">
+                Тоже одежда
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

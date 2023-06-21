@@ -1,7 +1,7 @@
 import Link from "next/link"
 
-export const Cart = () => {
-
+export const Cart = (list: any) => {
+  
   return(
     <div>
       <h2>Корзина</h2>

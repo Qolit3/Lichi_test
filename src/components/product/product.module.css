@@ -1,0 +1,43 @@
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.sizes_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 170px;
+  margin: 5px 0 5px;
+}
+
+.size {
+  font-size: small;
+  border: solid 1px black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity .3s ease;
+  opacity: .5;
+}
+
+.size:hover {
+  opacity: 1;
+}
+
+.name {
+  width: 250px;
+  margin: 10px auto;
+}
